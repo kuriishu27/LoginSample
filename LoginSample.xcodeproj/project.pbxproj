@@ -8,21 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		47C353E42865FF2B009695CA /* LoginSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C353E32865FF2B009695CA /* LoginSampleApp.swift */; };
-		47C353E62865FF2B009695CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C353E52865FF2B009695CA /* ContentView.swift */; };
+		47C353E62865FF2B009695CA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C353E52865FF2B009695CA /* LoginView.swift */; };
 		47C353E82865FF2D009695CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47C353E72865FF2D009695CA /* Assets.xcassets */; };
 		47C353EB2865FF2D009695CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47C353EA2865FF2D009695CA /* Preview Assets.xcassets */; };
+		47C353F22865FF63009695CA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C353F12865FF63009695CA /* LoginViewModel.swift */; };
+		47C353F42865FF71009695CA /* LoginDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C353F32865FF71009695CA /* LoginDataRepository.swift */; };
+		47C353FC28660114009695CA /* LoginSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C353FB28660114009695CA /* LoginSampleTests.swift */; };
+		47C35403286604DD009695CA /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C35402286604DD009695CA /* UserDefaultsStorage.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47C353FD28660114009695CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47C353D82865FF2B009695CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47C353DF2865FF2B009695CA;
+			remoteInfo = LoginSample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		47C353E02865FF2B009695CA /* LoginSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47C353E32865FF2B009695CA /* LoginSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSampleApp.swift; sourceTree = "<group>"; };
-		47C353E52865FF2B009695CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		47C353E52865FF2B009695CA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		47C353E72865FF2D009695CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47C353EA2865FF2D009695CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		47C353F12865FF63009695CA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		47C353F32865FF71009695CA /* LoginDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataRepository.swift; sourceTree = "<group>"; };
+		47C353F928660114009695CA /* LoginSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47C353FB28660114009695CA /* LoginSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSampleTests.swift; sourceTree = "<group>"; };
+		47C35402286604DD009695CA /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		47C353DD2865FF2B009695CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47C353F628660114009695CA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				47C353E22865FF2B009695CA /* LoginSample */,
+				47C353FA28660114009695CA /* LoginSampleTests */,
 				47C353E12865FF2B009695CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				47C353E02865FF2B009695CA /* LoginSample.app */,
+				47C353F928660114009695CA /* LoginSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,7 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				47C353E32865FF2B009695CA /* LoginSampleApp.swift */,
-				47C353E52865FF2B009695CA /* ContentView.swift */,
+				47C353E52865FF2B009695CA /* LoginView.swift */,
+				47C353F32865FF71009695CA /* LoginDataRepository.swift */,
+				47C353F12865FF63009695CA /* LoginViewModel.swift */,
+				47C35402286604DD009695CA /* UserDefaultsStorage.swift */,
 				47C353E72865FF2D009695CA /* Assets.xcassets */,
 				47C353E92865FF2D009695CA /* Preview Content */,
 			);
@@ -65,6 +96,14 @@
 				47C353EA2865FF2D009695CA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		47C353FA28660114009695CA /* LoginSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				47C353FB28660114009695CA /* LoginSampleTests.swift */,
+			);
+			path = LoginSampleTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +126,24 @@
 			productReference = 47C353E02865FF2B009695CA /* LoginSample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		47C353F828660114009695CA /* LoginSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47C353FF28660114009695CA /* Build configuration list for PBXNativeTarget "LoginSampleTests" */;
+			buildPhases = (
+				47C353F528660114009695CA /* Sources */,
+				47C353F628660114009695CA /* Frameworks */,
+				47C353F728660114009695CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47C353FE28660114009695CA /* PBXTargetDependency */,
+			);
+			name = LoginSampleTests;
+			productName = LoginSampleTests;
+			productReference = 47C353F928660114009695CA /* LoginSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +156,10 @@
 				TargetAttributes = {
 					47C353DF2865FF2B009695CA = {
 						CreatedOnToolsVersion = 13.4;
+					};
+					47C353F828660114009695CA = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 47C353DF2865FF2B009695CA;
 					};
 				};
 			};
@@ -116,6 +177,7 @@
 			projectRoot = "";
 			targets = (
 				47C353DF2865FF2B009695CA /* LoginSample */,
+				47C353F828660114009695CA /* LoginSampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +192,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		47C353F728660114009695CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +206,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47C353E62865FF2B009695CA /* ContentView.swift in Sources */,
+				47C35403286604DD009695CA /* UserDefaultsStorage.swift in Sources */,
+				47C353E62865FF2B009695CA /* LoginView.swift in Sources */,
 				47C353E42865FF2B009695CA /* LoginSampleApp.swift in Sources */,
+				47C353F22865FF63009695CA /* LoginViewModel.swift in Sources */,
+				47C353F42865FF71009695CA /* LoginDataRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47C353F528660114009695CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47C353FC28660114009695CA /* LoginSampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47C353FE28660114009695CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47C353DF2865FF2B009695CA /* LoginSample */;
+			targetProxy = 47C353FD28660114009695CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		47C353EC2865FF2D009695CA /* Debug */ = {
@@ -317,6 +405,42 @@
 			};
 			name = Release;
 		};
+		47C3540028660114009695CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HL92L2PJSU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christianleovido.LoginSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginSample.app/LoginSample";
+			};
+			name = Debug;
+		};
+		47C3540128660114009695CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HL92L2PJSU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christianleovido.LoginSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginSample.app/LoginSample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +458,15 @@
 			buildConfigurations = (
 				47C353EF2865FF2D009695CA /* Debug */,
 				47C353F02865FF2D009695CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47C353FF28660114009695CA /* Build configuration list for PBXNativeTarget "LoginSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47C3540028660114009695CA /* Debug */,
+				47C3540128660114009695CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
